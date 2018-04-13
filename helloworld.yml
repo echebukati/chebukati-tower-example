@@ -6,7 +6,7 @@
   tasks:
 
   - name: Instal Python 2
-    raw: test -e /usr/bin/python || (apt -y update && apt install -y python2 python-simplejson)
+    raw: test -e /usr/bin/python || (sudo apt -y update && apt install -y python2 python-simplejson)
  
   - name: Hello World!
     shell: echo "Hi! Tower is working."
