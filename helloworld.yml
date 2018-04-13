@@ -6,7 +6,7 @@
   tasks:
 
   - name: Install Python 2
-    raw: yum install -y python2 python-simplejson
+    raw: sudo bash -c "test -e /usr/bin/python || (apt -qqy update && apt install -qy python-minimal)"
  
   - name: Hello World!
     shell: echo "Hi! Tower is working."
